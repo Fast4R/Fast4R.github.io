@@ -1,0 +1,84 @@
+.projects{
+    padding: 10rem 0;
+
+    background-color: #EEEFF1;
+
+    @include breakpoint($mobile-min-bp){
+        padding: 6rem 0;
+    }
+}
+
+.projects__title{
+    margin-bottom: 7rem;
+
+    font-weight: 500;
+    font-size: 3.2rem;
+    text-align: center;
+
+    @include breakpoint($mobile-bp){
+        margin-bottom: 5rem; 
+    }
+
+
+    @include breakpoint($mobile-min-bp){
+        margin-bottom: 4rem;
+        font-size: 2.5rem;
+    }
+
+    @include breakpoint($mobile-critical-bp){
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+    }
+}
+
+.projects__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.projects__item{
+    padding-bottom: 2rem;
+    font-size: 2.4rem;
+    color: $black;
+    outline: none;
+    box-shadow: 0 0 10px rgba($black, .5);
+    object-fit: cover;
+
+    text-decoration: none;
+
+    img{
+        @include breakpoint($mobile-bp){
+            width: 400px;
+            height: 150px;
+        }
+    
+    
+        @include breakpoint($mobile-min-bp){
+            width: 300px;
+            height: 100px;  
+        }
+    
+        @include breakpoint($mobile-critical-bp){
+            width: 150px;
+            height: 60px;
+        }
+    }
+
+    @include breakpoint($mobile-bp){
+        font-size: 1.9rem;
+    }
+
+
+    @include breakpoint($mobile-min-bp){
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    @include breakpoint($mobile-critical-bp){
+        font-size: 1rem;
+    }
+}

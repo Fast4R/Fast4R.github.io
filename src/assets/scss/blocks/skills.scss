@@ -1,0 +1,130 @@
+.skills{
+    padding: 10rem 0;
+
+    @include breakpoint($mobile-critical-bp){
+        padding: 7rem; 
+    }
+}
+
+.skills__item{
+    display: flex;
+
+    @include breakpoint($mobile-critical-bp){
+        flex-direction: column;
+    }
+}
+
+.skills__content{
+    width: 50%;
+
+    &-title{
+        margin-bottom: 5rem;
+
+        font-family: Roboto;
+        font-size: 3.2rem;
+        font-weight: 500;
+
+        @include breakpoint($mobile-bp){
+            margin-bottom: 4.5rem;
+            font-size: 2.7rem;
+        }
+
+        @include breakpoint($mobile-min-bp){
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        @include breakpoint($mobile-critical-bp){
+            width: 0;
+            font-size: 2rem;
+        }
+    }
+
+    &-progress{
+        padding-left: 3rem;
+
+        @include breakpoint($mobile-critical-bp){
+            padding-left: 0;
+        }
+    }
+}
+
+.skills__img{
+    width: 50%;
+
+    img{
+        display: flex;
+        margin: auto;
+        margin-top: 0.6rem;
+        object-fit: cover;
+
+        @include breakpoint($medium-bp){
+            width: 350px;
+            height: 350px;
+        }
+
+        @include breakpoint($mobile-bp){
+            width: 270px;
+            height: 270px;
+        }
+
+        @include breakpoint($mobile-min-bp){
+            width: 220px;
+            height: 220px;
+        }
+
+        @include breakpoint($mobile-critical-bp){
+            width: 170px;
+            height: 170px;
+        }
+    }
+}
+
+.progress__title{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #727272;
+
+    margin-bottom: 1rem;
+
+    text-transform: uppercase;
+
+    @include breakpoint($mobile-bp){
+        margin-bottom: .5rem;
+        font-size: 1.4rem;   
+    }
+
+    @include breakpoint($mobile-min-bp){
+        margin-bottom: 0;
+        font-size: 1rem;    
+    }
+
+    @include breakpoint($mobile-critical-bp){
+            
+    }
+}
+
+.progress__bar{
+    width: 40rem;
+    height: 1rem;
+    margin-bottom: 3rem;
+
+    @include breakpoint($medium-bp){
+        width: 35rem;
+        margin-bottom: 2.5rem;    
+    }
+
+    @include breakpoint($mobile-bp){
+        width: 25rem;
+        margin-bottom: 2rem; 
+    }
+
+    @include breakpoint($mobile-min-bp){
+        width: 20rem;
+        margin-bottom: 1rem; 
+    }
+
+    @include breakpoint($mobile-critical-bp){
+        width: 15rem;
+    }
+}

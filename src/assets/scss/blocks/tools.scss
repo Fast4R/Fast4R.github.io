@@ -1,0 +1,46 @@
+.tools{
+    padding: 10rem 0;
+
+    background-color: #34547A;
+
+    @include breakpoint($mobile-min-bp){
+        padding: 7rem 0;  
+    }
+}
+
+.tools__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tools__img{
+    margin-bottom: 1rem;
+
+    @include breakpoint($medium-bp){
+         width: 45px;
+         height: 45px;   
+    }
+
+    @include breakpoint($mobile-min-bp){
+        width: 40px;
+        height: 40px;    
+    }
+}
+
+.tools__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools__title{
+    font-weight: 300;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    color: $white;
+
+    @include breakpoint($mobile-min-bp){
+        font-size: 1.3rem;     
+    }
+}

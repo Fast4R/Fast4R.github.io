@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    align-items: center;
+
+    padding-top: 5.5rem;
+}
+
+.header__logo{
+    width: 50%;
+    font-family: Revalia;
+    font-weight: 400;
+    font-size: 4.8rem;
+    color: #34547A;
+    text-transform: uppercase;
+
+    @include breakpoint($medium-bp){
+        font-size: 4rem;  
+    }
+
+    @include breakpoint($mobile-bp){
+        text-align: center;       
+    }
+
+    @include breakpoint($mobile-min-bp){
+        font-size: 3rem;
+    }
+}

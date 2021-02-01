@@ -1,0 +1,34 @@
+#aboutAuthor{
+    display: flex;
+}
+
+#projectSlider{
+    display: flex;
+}
+
+.slick-track{
+    padding: 1rem 0;
+}
+
+.slick__arrow{
+    margin: auto;
+
+    opacity: .5;
+    z-index: 2;
+
+    transition: opacity .2s linear;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    @include breakpoint($medium-bp){
+         width: 40px;
+         height: 40px;   
+    }
+
+    @include breakpoint($mobile-bp){
+         width: 30px;
+         height: 30px;   
+    }
+}

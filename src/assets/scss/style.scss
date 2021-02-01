@@ -1,0 +1,28 @@
+@import "vendor/reset";
+@import "vars";
+@import "mixins";
+
+body {
+    font-family: Roboto;
+    font-size: 21px;
+    color: $black;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@import "blocks/welcome__section";
+@import "blocks/container";
+@import "blocks/intro";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/modal";
+@import "blocks/about";
+@import "blocks/tools";
+@import "blocks/skills";
+@import "blocks/projects";
+@import "blocks/footer";
+
+@import "blocks/slickArrow";

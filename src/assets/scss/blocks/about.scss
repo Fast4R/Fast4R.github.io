@@ -1,0 +1,67 @@
+.about{
+    padding: 12rem 0;
+    
+}
+
+.about__item{
+    width: 54rem;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint($mobile-bp){
+        width: 44rem;
+    }
+
+    @include breakpoint($mobile-min-bp){
+         width: 30rem;   
+    }
+
+    @include breakpoint($mobile-critical-bp){
+        width: 15rem;    
+    }
+}
+
+.about__title{
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+
+    @include breakpoint($medium-bp){
+        font-size: 2.7rem;
+        margin-bottom: 4rem;     
+    }
+
+    @include breakpoint($mobile-bp){
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    @include breakpoint($mobile-min-bp){
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem; 
+    }
+}
+
+.about__subtitle{
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #727272;
+    line-height: 1.5;
+
+    @include breakpoint($medium-bp){
+        font-size: 1.4rem; 
+    }
+
+    @include breakpoint($mobile-bp){
+        padding: 0 3rem;
+        font-size: 1.1rem;   
+    }
+
+    @include breakpoint($mobile-min-bp){
+        font-size: .9rem;   
+    }
+}
