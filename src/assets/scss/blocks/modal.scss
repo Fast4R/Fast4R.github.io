@@ -36,6 +36,14 @@
         
         color: $white;
         text-align: center;
+
+        @include breakpoint($mobile-bp){
+            font-size: 2rem;
+        }
+
+        @include breakpoint($mobile-critical-bp){
+            font-size: 1.7rem; 
+        }
     }
 
     &-link{
@@ -46,6 +54,26 @@
         &:last-child{
             margin-right: 0;
         }
+
+        img{
+            @include breakpoint($mobile-bp){
+                width: 40px;
+                height: 40px;
+            }
+
+            @include breakpoint($mobile-critical-bp){
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    @include breakpoint($mobile-bp){
+        padding: 3rem 8rem 4rem;
+    }
+
+    @include breakpoint($mobile-critical-bp){
+        padding: 2.5rem 7rem 3.5rem;  
     }
 }
 
